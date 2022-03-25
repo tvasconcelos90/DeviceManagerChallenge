@@ -1,0 +1,19 @@
+.search {
+    background-color: rgb(233 234 246);
+    margin: 75px;    
+    align-items: center;
+    max-width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+.cancel-button {
+    background-color: rgb(233 234 246);  
+    color: #008CBA;
+}
+
+.input-search {
+    margin-left: 2%;
+    width: 85%;
+}

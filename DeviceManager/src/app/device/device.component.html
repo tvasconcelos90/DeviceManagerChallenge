@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <app-search [disableSearch] = "false"></app-search>   
+            <ul class="list-group">            
+                <li class="list-group-item" *ngFor="let device of devices">                
+                    <button mat-icon-button (click)="detail(device.id)">
+                        <mat-icon class="icon-display" aria-hidden="false">
+                            {{device.type}}
+                        </mat-icon>
+                    </button>
+                        <span style="margin-left: 0;">
+                            {{device.name}}<br/>
+                            Status: {{device.status}}
+                        </span>  
+                    <mat-icon style="text-align: right" aria-hidden="false" matTooltip="{{device.info}}">info</mat-icon>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+        

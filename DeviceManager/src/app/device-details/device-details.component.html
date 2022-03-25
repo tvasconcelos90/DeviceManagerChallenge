@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <app-search [disableSearch] = "true"></app-search>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-5 related-devices">
+            <h3 class="title"><b>Related Devices</b></h3>
+            <ul class="list-group">            
+                <li class="list-group-item" *ngFor="let device of devices">
+                    <mat-icon class="icon-display" aria-hidden="false">
+                        {{device.type}}
+                    </mat-icon>                    
+                    <span class="device-name">
+                        {{device.name}}<br/>
+                        Status: {{device.status}}
+                    </span>  
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-5 details-device">
+            <h3  class="title"><b>Details: {{device.name}}</b></h3>
+            <span class="details-device-info"> Status: {{device.status}} <br/>
+                Temperature: {{device.temperature}} ºC <br/>
+                Usage:
+            </span>
+            <img class="graph" src="../../assets/images/graph.jpg" />
+        </div>
+    </div>
+</div>  

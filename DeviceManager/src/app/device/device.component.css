@@ -1,0 +1,21 @@
+
+
+.list-group-item {
+    background-color: rgb(233 234 246);
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.list-group {
+    margin: 70px;
+    margin-top: 10px;
+    margin-right: auto;
+}
+
+.icon-display {
+    transform: scale(1.5);
+}

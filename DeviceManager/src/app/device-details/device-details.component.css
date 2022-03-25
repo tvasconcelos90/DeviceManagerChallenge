@@ -1,0 +1,48 @@
+
+.related-devices {
+    margin-left: 85px; 
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.details-device {
+    margin-left: 0px; 
+    align-items: center;
+    padding: 0px !important;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color:rgb(233 234 246);
+}
+
+.list-group-item {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+    background-color: rgb(233 234 246); 
+}
+
+.title {
+    background-color: rgb(233 234 246);  
+    padding: 8px;
+}
+
+.device-name {
+    margin-left: 20px;
+}
+
+.graph {
+    width: 330px;
+    height: 140px;
+    object-fit: scale-down;
+}
+
+.details-device-info {
+    margin-left: 15px;
+    display: flex;
+
+}
+
+.row {
+    justify-content: space-around;
+}

@@ -1,0 +1,7 @@
+<div class="search">
+    <!-- <button (click)="search()">Search</button> -->
+    <input class="input-search" type="text" placeholder="Search" [(ngModel)]="searchTerm" (change)="search()" [disabled] = disableSearch/>
+    <button mat-flat-button="" class="mat-button-base cancel-button" (click)="cancel()" [disabled] = disableSearch>
+        <span class="mat-button-wrapper">Cancel</span>        
+    </button>
+</div>

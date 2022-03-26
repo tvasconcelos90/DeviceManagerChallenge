@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { filter } from 'rxjs';
 import { Device } from '../models/Device';
 import { DeviceService } from '../service/device-service.service';
 

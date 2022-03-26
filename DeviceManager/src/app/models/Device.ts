@@ -5,5 +5,4 @@ export class Device {
     type: string;
     info: string;
     temperature: number;
-    relatedDevices: Device[];
 }

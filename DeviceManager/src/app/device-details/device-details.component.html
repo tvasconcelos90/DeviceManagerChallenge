@@ -9,13 +9,13 @@
         <div class="col-md-5 related-devices">
             <h3 class="title"><b>Related Devices</b></h3>
             <ul class="list-group">            
-                <li class="list-group-item" *ngFor="let device of relatedDevices">
+                <li class="list-group-item" *ngFor="let relatedDevice of relatedDevices">
                     <mat-icon class="icon-display" aria-hidden="false">
-                        {{device.type}}
+                        {{relatedDevice.type}}
                     </mat-icon>                    
                     <span class="device-name">
-                        {{device.name}}<br/>
-                        Status: {{device.status}}
+                        {{relatedDevice.name}}<br/>
+                        Status: {{relatedDevice.status}}
                     </span>  
                 </li>
             </ul>

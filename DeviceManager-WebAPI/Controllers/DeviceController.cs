@@ -39,6 +39,21 @@ namespace DeviceManager_WebAPI.Controllers
             {
                 return BadRequest($"Error: {ex.Message}");
             }
-        }        
+        }
+
+        [HttpGet]
+        [Route("relatedDevices/{deviceId}")]
+        public async Task<IActionResult> GetRelatedDevicesAsync(int deviceId) 
+        {
+            try 
+            {
+                var result = await _repo.GetRelatedDevicesAsync(deviceId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {   
+                return BadRequest($"Error: {ex.Message}");
+            }
+        }       
     }
 }

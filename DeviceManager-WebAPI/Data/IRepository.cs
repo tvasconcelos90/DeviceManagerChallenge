@@ -6,5 +6,6 @@ namespace DeviceManager_WebAPI.Data
     {
         Task<Device[]> GetDevicesAsync();
         Task<Device> GetDeviceByIdAsync(int id);
+        Task<Device[]> GetRelatedDevicesAsync(int id);
     }
 }

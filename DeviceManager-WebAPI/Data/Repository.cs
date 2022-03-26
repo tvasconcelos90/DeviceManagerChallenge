@@ -30,5 +30,15 @@ namespace DeviceManager_WebAPI.Data
 
             return await query.ToArrayAsync();
         }
+
+        async Task<Device[]> IRepository.GetRelatedDevicesAsync(int id)
+        {
+            IQueryable<Device> query = _context.Devices;
+
+            query = query.AsNoTracking()
+                         .Where(device => device.Id != id);
+            
+            return await query.ToArrayAsync();
+        }
     }
 }

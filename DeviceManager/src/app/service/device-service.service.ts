@@ -21,4 +21,8 @@ export class DeviceService {
     return this.http.get<Device>(`${this.baseUrl}/${deviceId}`);
   }
 
+  getRelatedDevices(deviceId: number): Observable<Device[]> {
+    return this.http.get<Device[]>(`${this.baseUrl}/relatedDevices/${deviceId}`);
+  }
+
 }

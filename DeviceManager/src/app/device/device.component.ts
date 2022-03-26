@@ -13,12 +13,6 @@ export class DeviceComponent implements OnInit {
 
   public devices: Device[] = [];
 
-  // public devices: Device[] = [
-  //   {id: 1, name: "Device 1", status: "Available", type: "smartphone", info: "Personal smartphone", temperature: 55, relatedDevices: []},
-  //   {id: 2, name: "Device 2", status: "Offline", type: "tablet", info: "Samsung Tablet", temperature: 55, relatedDevices: []},
-  //   {id: 3, name: "Device 3", status: "Available", type: "computer", info: "Company's Computer", temperature: 55, relatedDevices: []}
-  // ];
-
   constructor(private route:ActivatedRoute, 
               private router: Router,
               private deviceService: DeviceService ) {}
@@ -49,13 +43,4 @@ export class DeviceComponent implements OnInit {
   detail(id: number):void {
     this.router.navigateByUrl('/device-details/' + id);
   }
-
-  mockDevices(): Device[] {
-    return this.devices = [
-      {id: 1, name: "Device 1", status: "Available", type: "smartphone", info: "Personal smartphone", temperature: 55, relatedDevices: []},
-      {id: 2, name: "Device 2", status: "Offline", type: "tablet", info: "Samsung Tablet", temperature: 55, relatedDevices: []},
-      {id: 3, name: "Device 3", status: "Available", type: "computer", info: "Company's Computer", temperature: 55, relatedDevices: []}
-    ];
-  }
-
 }
